@@ -1,0 +1,15 @@
+{
+    "name": "nunoalexandre/utrust-give",
+    "autoload": {
+        "psr-4": {
+            "Nunoalexandre\\UtrustGive\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nuno Alexandre",
+            "email": "nunnomalex@gmail.com"
+        }
+    ],
+    "require": {}
+}
