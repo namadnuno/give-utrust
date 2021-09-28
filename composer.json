@@ -2,7 +2,7 @@
     "name": "nunoalexandre/utrust-give",
     "autoload": {
         "psr-4": {
-            "Nunoalexandre\\UtrustGive\\": "src/"
+            "Nunoalexandre\\Utrust\\": "includes"
         }
     },
     "authors": [

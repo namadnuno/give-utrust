@@ -132,6 +132,38 @@ class Give_Utrust_Gateway_Settings {
 					'type'  => 'api_key',
 					'desc'  => __( 'Required api secret provided by utrust.', 'give-utrust' ),
 				),
+                array(
+					'title' => __( 'Title', 'give-utrust' ),
+					'id'    => 'utrust_title',
+					'type'  => 'text',
+					'desc'  => __('This controls the title for the payment method the customer sees during checkout.', 'give-utrust'),
+                    'default' => __('Utrust', 'give-utrust')
+				),
+                array(
+					'title' => __( 'Title', 'give-utrust' ),
+					'id'    => 'utrust_description',
+					'type'  => 'text',
+					'desc'  => __('Payment method instructions that the customer will see on your checkout.', 'give-utrust'),
+                    'default' => __('You will be redirected to the Utrust payment widget compatible with any major crypto wallets. It will allow you to pay for your purchase in a safe and seamless way using Bitcoin, Ethereum, Tether or a number of other currencies.', 'give-utrust')
+				),
+                array(
+					'title' => __( 'Environment', 'give-utrust' ),
+					'id'    => 'utrust_environment',
+					'type'  => 'radio_inline',
+					'desc'  => __('Environment where the payment will run', 'give-utrust'),
+                    'default' => 'test',
+                    'options' => [
+                        'test' => 'Sandbox',
+                        'production' => 'Production'
+                    ]
+				),
+				array(
+					'title' => __( 'Callback URL', 'give-utrust' ),
+					'id'    => 'utrust_callback_url',
+					'type'  => 'text',
+					'desc'  => __( 'Callback url that will be requested once an update is made on the order. (change to a published domain, do not use localhost)', 'give-utrust' ),
+					'default' => get_site_url() . '/wp-content/plugins/utrust-give/callback.php'
+				),
 				array(
 					'id'   => 'give_utrust_payments_setting',
 					'type' => 'sectionend',

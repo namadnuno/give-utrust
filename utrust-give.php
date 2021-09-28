@@ -124,7 +124,7 @@ final class Give_Utrust_Gateway {
 		require_once GIVE_UTRUST_DIR . 'vendor/autoload.php';
 
 		// Load helper functions.
-		require_once GIVE_UTRUST_DIR . 'includes/functions.php';
+		//require_once GIVE_UTRUST_DIR . 'includes/functions.php';
 
 		// Load plugin settings.
 		require_once GIVE_UTRUST_DIR . 'includes/admin/admin-settings.php';
@@ -134,13 +134,8 @@ final class Give_Utrust_Gateway {
 
 		// Process payment
 		require_once GIVE_UTRUST_DIR . 'includes/process-payment.php';
-		require_once GIVE_UTRUST_DIR . 'includes/class-utrust-customers.php';
-		require_once GIVE_UTRUST_DIR . 'includes/class-utrust-webhooks.php';
-
-		if ( is_admin() ) {
-			// Load admin actions..
-			require_once GIVE_UTRUST_DIR . 'includes/admin/actions.php';
-		}
+		//require_once GIVE_UTRUST_DIR . 'includes/class-utrust-customers.php';
+		//require_once GIVE_UTRUST_DIR . 'includes/class-utrust-webhooks.php';
 
 		return self::$instance;
 	}
