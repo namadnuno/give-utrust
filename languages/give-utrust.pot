@@ -1,9 +1,9 @@
-# Copyright (C) 2021 Give-Razorpay
+# Copyright (C) 2021 Give-utrust
 # This file is distributed under the same license as the Give-Utrust package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Give-Utrust\n"
-"Report-Msgid-Bugs-To: https://github.com/impress-org/give-razorpay/issues/new\n"
+"Report-Msgid-Bugs-To: https://github.com/impress-org/give-utrust/issues/new\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,6 +16,6 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: give-razorpay.php:274
+#: give-utrust.php:274
 msgid ""
 msgstr ""

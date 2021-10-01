@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Process the Razorpay payment.
+ * Process the Utrust payment.
  *
  * @param $donation_data
  */
@@ -54,7 +54,7 @@ function give_utrust_process_payment( $donation_data ) {
                 esc_html__( 'Payment Error', 'give-utrust' ),
                 /* translators: %s: payment data */
                 sprintf(
-                    esc_html__( 'The payment creation failed before processing the Razorpay gateway request. Payment data: %s', 'give-utrust' ),
+                    esc_html__( 'The payment creation failed. Payment data: %s', 'give-utrust' ),
                     print_r( $donation_data, true )
                 ),
                 $payment
@@ -85,10 +85,8 @@ function give_utrust_process_payment( $donation_data ) {
 		// An error occurred.
 		give_record_gateway_error(
 			__( 'Utrust Error', 'give-utrust' ),
-			__( 'Transaction Failed.', 'give-utrust' ) . '<br><br>' . sprintf( esc_attr__( 'Details: %s', 'give-utrust' ), '<br>' . print_r( $razorpay_response, true ) )
+			__( 'Transaction Failed.', 'give-utrust' ) 
 		);
-
-		give_set_error( 'give-utrust', sprintf( __( 'The transaction failed. Details: %s', 'give-utrust' ), $razorpay_response ) );
 
 		// Problems? Send back.
 		give_send_back_to_checkout();

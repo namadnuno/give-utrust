@@ -32,7 +32,7 @@ class Give_Utrust_Gateway_Settings {
 	private $section_label;
 
 	/**
-	 * Give_RazorpUtrustay_Settings constructor.
+	 * Give_Utrust_Settings constructor.
 	 */
 	private function __construct() {
 	}

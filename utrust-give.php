@@ -120,7 +120,6 @@ final class Give_Utrust_Gateway {
 	 */
 	public function load_files() {
 
-		// Load Razorpay SDK for PHP.
 		require_once GIVE_UTRUST_DIR . 'vendor/autoload.php';
 
 		// Load helper functions.
