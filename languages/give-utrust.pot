@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Give-Utrust\n"
-"Report-Msgid-Bugs-To: https://github.com/impress-org/give-utrust/issues/new\n"
+"Report-Msgid-Bugs-To: https://github.com/namadnuno/give-utrust.git/issues/new\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
