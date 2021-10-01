@@ -16,8 +16,6 @@ class ApiClient
         $this->apiKey = $apiKey;
         $this->apiUrl = ($environment == 'test') ? SANDBOX_URL : PRODUCTION_URL;
         $this->curlHandle = null;
-
-        var_dump($this->apiKey, $environment, $this->apiUrl, SANDBOX_URL);
     }
 
     public function __destruct()
